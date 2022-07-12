@@ -104,7 +104,7 @@ while gen <= generation:
 # Ordenamos
 M_ag = M_ag[M_ag[:, 2].argsort()]
 
-print(f'Solucion real: X = -9, Y = -10')
+print(f'Solucion real: X = 1, Y = 1')
 print(f'Solucion AG: X = {M_ag[0,0]:.3f}, Y = {M_ag[0,1]:.3f}')
 
 
@@ -112,7 +112,7 @@ print(f'Solucion AG: X = {M_ag[0,0]:.3f}, Y = {M_ag[0,1]:.3f}')
 f = lambda x,y: (1-x)**2 + 100*(y-x**2)**2;
 
 # Initialize figure 
-figRos = plt.figure(figsize=(5, 5))
+figRos = plt.figure(figsize=(7, 7))
 axRos = figRos.gca(projection='3d')
 
 # Evaluate function
