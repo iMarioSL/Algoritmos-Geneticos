@@ -71,7 +71,7 @@ while gen <= generation:
             Mut = np.random.rand()
             if Mut < T_mut:
                 Pm = np.random.randint(0, 2)
-                Cm = np.random.randint(0, 1)
+                Cm = np.random.randint(1, 2)
                 if Cm == 1:
                     Padre1[Pm] = np.random.uniform(-10, 10)
                 elif Cm == 2:
@@ -92,7 +92,7 @@ while gen <= generation:
 M_ag = M_ag[M_ag[:, 3].argsort()]
 
 print(f'Solucion real: X = -9, Y = -10, Z = -8')
-print(f'Solucion AG: X = {M_ag[0,0]}, Y = {M_ag[0,1]}, Z = {M_ag[0,2]}')
+print(f'Solucion AG: X = {M_ag[0,0]:.3f}, Y = {M_ag[0,1]:.3f}, Z = {M_ag[0,2]:.3f}')
 
 #X = np.append(X, [M_ag[0, 0]])
 #Y = np.append(Y, [M_ag[0, 1]])
